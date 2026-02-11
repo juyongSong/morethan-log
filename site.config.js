@@ -24,16 +24,15 @@ const CONFIG = {
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
+  link: "https://frenz104.vercel.app",
   since: 2026, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
   notionConfig: {
-    pageId: process.env.NOTION_PAGE_ID,
+    pageId: "2f9dacf1039981ea9e6dc771bb5aa7e1",
   },
-
   // plugin configuration (optional)
   googleAnalytics: {
     enable: false,
@@ -69,7 +68,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 10, // revalidate time for [slug], index
+  revalidateTime: 60, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
